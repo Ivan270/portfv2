@@ -28,7 +28,7 @@
 						color=""
 					>
 						<v-card-title class="about__title font-weight-black">
-							<h5 class="text-h6">Hey there!</h5>
+							<h5 class="text-h6">Hey there! It's me</h5>
 						</v-card-title>
 						<v-card-text class="text-body-1 text-start about__text"
 							>My name is Iván and I specialize at developing apps and websites.
