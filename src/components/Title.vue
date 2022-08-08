@@ -3,7 +3,9 @@
 		<v-container fill-height fluid no-gutters>
 			<v-row justify="space-between" align="center">
 				<v-col cols="12" md="7">
-					<p class="display-4 text-start pb-1 font-weight-bold text-capitalize">
+					<p
+						class="display-4 text-start pb-1 font-weight-black text-capitalize"
+					>
 						Iván Verdug<span class="title-span">o</span>
 					</p>
 					<h3 class="text-h6 text-start font-weight-light pt-1">
