@@ -17,19 +17,7 @@
 </script>
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@300&display=swap');
-	body {
-		font-family: 'Lora', serif;
-	}
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		font-family: 'Montserrat', sans-serif;
-		font-weight: 300;
-		text-transform: uppercase;
-	}
+
 	@keyframes color-change {
 		0% {
 			color: black;
