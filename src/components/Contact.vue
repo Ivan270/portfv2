@@ -3,7 +3,7 @@
 		<v-container>
 			<v-row align="center">
 				<v-col cols="12">
-					<h3 class="ps-1 subtitle">Let's get in touch</h3>
+					<h3 class="ps-1 pb-5 subtitle-1">Let's get in touch</h3>
 					<a
 						href="mailto:ivan270@gmail.com"
 						class="display-4 text-decoration-none grey--text text--darken-4 text-start font-weight-black text-lowercase"
@@ -15,7 +15,7 @@
 					<a
 						href="https://github.com/Ivan270"
 						target="_blank"
-						class="pr-5 text-decoration-none grey--text text--darken-4"
+						class="pe-5 text-decoration-none grey--text text--darken-4"
 						>Github</a
 					>
 					<a

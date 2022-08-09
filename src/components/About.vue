@@ -62,11 +62,4 @@
 	};
 </script>
 
-<style scoped>
-	.about__title {
-		color: black;
-	}
-	.about__text {
-		font-family: 'Lora', serif;
-	}
-</style>
+<style scoped></style>
