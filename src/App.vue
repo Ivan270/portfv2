@@ -16,8 +16,6 @@
 	};
 </script>
 <style>
-	@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@300&display=swap');
-
 	@keyframes color-change {
 		0% {
 			color: black;
