@@ -13,82 +13,21 @@
 					</v-row>
 				</v-container>
 			</v-col>
-			<v-col cols="12">
-				<v-card
-					max-width="380"
-					height="300"
-					class="mx-auto pa-2 text-center"
-					tile
-					dark
-					outlined
-					hover
-					@click="dialog = true"
-					v-for="project in projects"
-					:key="project.name"
-				>
-					<v-img :src="project.thumbnail"></v-img>
-					<v-chip class="mt-5">{{ project.date }}</v-chip>
-					<v-card-title class="justify-center">{{ project.name }}</v-card-title>
-					<div class="text-center">
-						<v-dialog v-model="dialog" max-width="900" dark>
-							<v-card>
-								<v-card-title class="text-h5">
-									{{ project.name }}
-								</v-card-title>
-								<v-carousel v-model="model">
-									<v-carousel-item v-for="(img, i) in project.imgs" :key="i">
-										<v-sheet height="100%" tile>
-											<v-img :src="img" contain></v-img>
-										</v-sheet>
-									</v-carousel-item>
-								</v-carousel>
-
-								<v-card-text>
-									{{ project.description }}
-								</v-card-text>
-
-								<v-divider></v-divider>
-
-								<v-card-actions>
-									<v-btn
-										color="primary"
-										rounded
-										small
-										@click="goToLink(project.gitlink)"
-									>
-										Visit GitHub
-									</v-btn>
-									<v-spacer></v-spacer>
-									<v-btn
-										color="purple"
-										small
-										rounded
-										@click="goToLink(project.link)"
-									>
-										Visit Page
-									</v-btn>
-									<v-spacer></v-spacer>
-									<v-btn color="error" small rounded @click="dialog = false">
-										Close
-									</v-btn>
-								</v-card-actions>
-							</v-card>
-						</v-dialog>
-					</div>
-				</v-card>
+			<v-col cols="4" v-for="project in projects" :key="project.name">
+				<ProjectCard :item="project" />
 			</v-col>
 		</v-row>
 	</v-container>
 </template>
 
 <script>
+	import ProjectCard from '@/components/ProjectCard.vue';
+
 	export default {
 		name: 'projects-comp',
 		// props: {},
 		data: function () {
 			return {
-				dialog: false,
-				model: 0,
 				projects: [
 					{
 						name: 'AlfaWeb',
@@ -106,17 +45,29 @@
 						gitlink: 'https://github.com/Ivan270/alfaweb',
 						link: 'https://alfaweb-51b99.web.app/login',
 					},
+					{
+						name: 'Good Moovs',
+						date: 2022,
+						description:
+							"A simple movie database front-end project. I'm consuming 'The Movie Database' API for getting and storing its information in Vue Store, using dynamic routing for showing the desired movie information (rating, genres, cast, poster and its teaser/trailer video in Youtube). All with my own aesthetic design.",
+						thumbnail: require('@/assets/moovs-main.png'),
+						imgs: [
+							require('@/assets/moovs-main.png'),
+							require('@/assets/moovs-movie-list.png'),
+							require('@/assets/moovs-movie-view.png'),
+						],
+						gitlink: 'https://github.com/Ivan270/goodmoovs',
+						link: 'https://good-moovs.netlify.app/',
+					},
 				],
 			};
 		},
 		// computed: {},
-		methods: {
-			goToLink(link) {
-				window.open(link);
-			},
-		},
+		// methods: {},
 		// watch: {},
-		// components: {},
+		components: {
+			ProjectCard,
+		},
 		// mixins: [],
 		// filters: {},
 		// -- Lifecycle Methods
