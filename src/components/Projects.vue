@@ -59,6 +59,23 @@
 						gitlink: 'https://github.com/Ivan270/goodmoovs',
 						link: 'https://good-moovs.netlify.app/',
 					},
+					{
+						name: 'Shopping App',
+						date: 2022,
+						description:
+							"A Vuetify shopping app that consumes 'Fake Store Api' for fetching a variety of products in different categories. The shopping cart information is being stored in Vuex's store, from where I can calculate the cart's total and check or change the amount of items for each product. At the checkout I'm using Vuelidate for validating required, email, number and phone number inputs. At the end, after confirming the order the user is taken to a confirmation screen which shows the order's ID.",
+						thumbnail: require('@/assets/shop-checkout.png'),
+						imgs: [
+							require('@/assets/shop-home.png'),
+							require('@/assets/shop-category.jpg'),
+							require('@/assets/shop-product.png'),
+							require('@/assets/shop-cart.png'),
+							require('@/assets/shop-checkout.png'),
+							require('@/assets/shop-confirmation.png'),
+						],
+						gitlink: 'https://github.com/Ivan270/store_app',
+						link: 'https://store-fakestoreapi.netlify.app/',
+					},
 				],
 			};
 		},
