@@ -33,7 +33,7 @@
 						name: 'AlfaWeb',
 						date: 2022,
 						description:
-							'Descripción del proyecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nulla magnam nostrum earum nisi fugit ipsum, quaerat vero officiis atque iste provident eveniet molestiae odio. Consectetur provident esse dicta ad.',
+							"Vue.js app environment with: Vue Router for protecting routes and redirecting the user, creation of routines to connect to Firebase Authentication and Firestore Cloud, managing the information provided by the database with Vuex. Vuetify as the main UI Framework. Overall it's an online course managing system using Firebase for database administration, only letting registered users to log into the web.",
 						thumbnail: require('@/assets/alfaweb-login.png'),
 						imgs: [
 							require('@/assets/alfaweb-login.png'),
