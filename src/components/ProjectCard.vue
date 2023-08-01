@@ -4,8 +4,8 @@
 		height="300"
 		class="mx-auto pa-2 text-center"
 		tile
-		dark
 		outlined
+		dark
 		hover
 		@click="dialog = true"
 	>

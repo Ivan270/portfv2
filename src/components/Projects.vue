@@ -4,18 +4,67 @@
 		fill-height
 		class="projects_container grey darken-3 white--text py-16"
 	>
-		<v-row justify="space-around">
-			<v-col cols="12">
-				<h2 class="text-h4 text-center pb-16">Projects</h2>
-				<v-container>
-					<v-row>
-						<v-divider dark></v-divider>
-					</v-row>
-				</v-container>
-			</v-col>
-			<v-col cols="4" v-for="project in projects" :key="project.name">
-				<ProjectCard :item="project" />
-			</v-col>
+		<v-col cols="12">
+			<h2 class="text-h4 text-center pb-16">Projects</h2>
+			<v-container>
+				<v-row>
+					<v-divider dark></v-divider>
+				</v-row>
+			</v-container>
+		</v-col>
+		<v-row justify="center">
+			<v-container>
+				<v-expansion-panels inset dark>
+					<v-expansion-panel>
+						<v-expansion-panel-header
+							>Fullstack Projects</v-expansion-panel-header
+						>
+						<v-expansion-panel-content>
+							<v-slide-group class="pa-4" active-class="success" show-arrows>
+								<v-slide-item>
+									<v-row justify="space-around">
+										<v-col
+											cols="4"
+											v-for="project in fullProjects"
+											:key="project.name"
+										>
+											<ProjectCard :item="project" />
+										</v-col>
+									</v-row>
+								</v-slide-item>
+							</v-slide-group>
+						</v-expansion-panel-content>
+					</v-expansion-panel>
+					<v-expansion-panel>
+						<v-expansion-panel-header
+							>Front End Projects</v-expansion-panel-header
+						>
+						<v-expansion-panel-content>
+							<v-slide-group class="pa-4" active-class="success" show-arrows>
+								<v-slide-item>
+									<v-row justify="space-around">
+										<v-col
+											cols="4"
+											v-for="project in frontProjects"
+											:key="project.name"
+										>
+											<ProjectCard :item="project" />
+										</v-col>
+									</v-row>
+								</v-slide-item>
+							</v-slide-group>
+						</v-expansion-panel-content>
+					</v-expansion-panel>
+				</v-expansion-panels>
+			</v-container>
+		</v-row>
+		<v-row>
+			<v-sheet
+				class="mx-auto projects_container grey darken-2"
+				elevation="2"
+				max-width="75%"
+			>
+			</v-sheet>
 		</v-row>
 	</v-container>
 </template>
@@ -28,7 +77,25 @@
 		// props: {},
 		data: function () {
 			return {
-				projects: [
+				fullProjects: [
+					{
+						name: 'Bootcamp App',
+						date: 2023,
+						description: 'lorem ipsum dolor noseque',
+						thumbnail: require('@/assets/shop-checkout.png'),
+						imgs: [
+							require('@/assets/shop-home.png'),
+							require('@/assets/shop-category.jpg'),
+							require('@/assets/shop-product.png'),
+							require('@/assets/shop-cart.png'),
+							require('@/assets/shop-checkout.png'),
+							require('@/assets/shop-confirmation.png'),
+						],
+						gitlink: 'https://github.com/Ivan270/store_app',
+						link: 'https://store-fakestoreapi.netlify.app/',
+					},
+				],
+				frontProjects: [
 					{
 						name: 'AlfaWeb',
 						date: 2022,
@@ -77,6 +144,7 @@
 						link: 'https://store-fakestoreapi.netlify.app/',
 					},
 				],
+				classArray: ['selected', 'underlined'],
 			};
 		},
 		// computed: {},

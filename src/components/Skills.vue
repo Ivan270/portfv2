@@ -7,7 +7,7 @@
 			</v-row>
 		</v-container>
 		<v-row justify="center" justify-lg="space-around">
-			<v-col cols="auto" lg="1" v-for="skill in skills" :key="skill.title">
+			<!-- <v-col cols="auto" lg="1" v-for="skill in skills" :key="skill.title">
 				<v-sheet
 					rounded="xl"
 					height="90"
@@ -25,7 +25,35 @@
 						{{ skill.title }}
 					</h6>
 				</v-sheet>
-			</v-col>
+			</v-col> -->
+
+			<v-sheet class="mx-auto" max-width="50%" dark rounded="xl">
+				<v-slide-group class="pa-4" show-arrows>
+					<v-slide-item v-for="skill in skills" :key="skill.title">
+						<v-card class="ma-4" width="100" elevation="0">
+							<v-row align="center" justify="center">
+								<v-sheet
+									rounded="xl"
+									height="90"
+									width="90"
+									class="d-flex flex-column align-center justify-center"
+									color="black"
+								>
+									<v-hover v-slot="{ hover }">
+										<v-icon x-large :class="{ 'change-color': hover }">{{
+											skill.icon
+										}}</v-icon>
+									</v-hover>
+
+									<h6 class="white--text ma-0 pa-0">
+										{{ skill.title }}
+									</h6>
+								</v-sheet>
+							</v-row>
+						</v-card>
+					</v-slide-item>
+				</v-slide-group>
+			</v-sheet>
 		</v-row>
 	</v-container>
 </template>
@@ -44,6 +72,8 @@
 					{ title: 'Sass', icon: 'mdi-sass' },
 					{ title: 'Vuetify', icon: 'mdi-vuetify' },
 					{ title: 'Bootstrap', icon: 'mdi-sass' },
+					{ title: 'Node JS', icon: 'mdi-nodejs' },
+					{ title: 'PostgreSQL', icon: 'mdi-database' },
 				],
 			};
 		},

@@ -9,7 +9,7 @@
 						Iván Verdug<span class="title-span">o</span>
 					</p>
 					<h3 class="text-h6 text-start font-weight-light pt-1">
-						Front-End Developer
+						Web Developer
 					</h3>
 				</v-col>
 
