@@ -81,7 +81,8 @@
 					{
 						name: 'Bootcamp App',
 						date: 2023,
-						description: 'lorem ipsum dolor noseque',
+						description:
+							'Fullstack Node.js application used to develop an API. This API is designed to manage an organization that offers different types of bootcamps. It uses a PostgreSQL database to store the information. The application allows users to view the different available bootcamps and register as a user. Once a user logs in, they can manage the bootcamps, including the ability to add new bootcamps, edit them, and add users to one or more bootcamps. To ensure the security of the application, JWT is used to protect the administration routes, and passwords are encrypted using bcrypt. As for the front-end, Handlebars.js is used along with Tailwind to create an attractive and user-friendly interface.',
 						thumbnail: require('@/assets/bootcamp-home.png'),
 						imgs: [
 							require('@/assets/bootcamp-home.png'),
