@@ -4,7 +4,7 @@
 			<v-row justify="space-between" align="center">
 				<v-col cols="12" md="7">
 					<p
-						class="text-h3 text-lg-h1 text-start pb-1 font-weight-black text-capitalize"
+						class="text-h3 text-lg-h1 text-start pb-1 font-weight-black text-capitalize breaker"
 					>
 						Iván Verdug<span class="title-span">o</span>
 					</p>
@@ -69,5 +69,8 @@
 	}
 	.change-color {
 		transition: transform 0.6s ease-in-out, background-color 0.6s ease-in-out;
+	}
+	.breaker {
+		word-wrap: break-word;
 	}
 </style>

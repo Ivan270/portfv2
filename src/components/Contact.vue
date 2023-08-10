@@ -6,7 +6,7 @@
 					<h3 class="ps-1 pb-5 subtitle-1">Let's get in touch</h3>
 					<a
 						href="mailto:ivan270@gmail.com"
-						class="text-h5 text-md-h3 text-lg-h1 text-decoration-none grey--text text--darken-4 text-start font-weight-black text-lowercase"
+						class="text-h5 text-md-h3 text-lg-h1 text-decoration-none grey--text text--darken-4 text-start font-weight-black text-lowercase breaker"
 					>
 						ivan270@gmail.com
 					</a>
@@ -48,4 +48,8 @@
 	};
 </script>
 
-<style scoped></style>
+<style scoped>
+	.breaker {
+		word-wrap: break-word;
+	}
+</style>
