@@ -4,7 +4,7 @@
 			<v-row justify="space-between" align="center">
 				<v-col cols="12" md="7">
 					<p
-						class="display-4 text-start pb-1 font-weight-black text-capitalize"
+						class="text-h3 text-lg-h1 text-start pb-1 font-weight-black text-capitalize"
 					>
 						Iván Verdug<span class="title-span">o</span>
 					</p>
