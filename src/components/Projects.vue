@@ -12,60 +12,51 @@
 				</v-row>
 			</v-container>
 		</v-col>
-		<v-row justify="center">
-			<v-container>
-				<v-expansion-panels inset dark>
-					<v-expansion-panel>
-						<v-expansion-panel-header
-							>Fullstack Projects</v-expansion-panel-header
-						>
-						<v-expansion-panel-content>
-							<v-slide-group class="pa-4" active-class="success" show-arrows>
-								<v-slide-item>
-									<v-row justify="space-around">
-										<v-col
-											cols="4"
-											v-for="project in fullProjects"
-											:key="project.name"
-										>
-											<ProjectCard :item="project" />
-										</v-col>
-									</v-row>
-								</v-slide-item>
-							</v-slide-group>
-						</v-expansion-panel-content>
-					</v-expansion-panel>
-					<v-expansion-panel>
-						<v-expansion-panel-header
-							>Front End Projects</v-expansion-panel-header
-						>
-						<v-expansion-panel-content>
-							<v-slide-group class="pa-4" active-class="success" show-arrows>
-								<v-slide-item>
-									<v-row justify="space-around">
-										<v-col
-											cols="4"
-											v-for="project in frontProjects"
-											:key="project.name"
-										>
-											<ProjectCard :item="project" />
-										</v-col>
-									</v-row>
-								</v-slide-item>
-							</v-slide-group>
-						</v-expansion-panel-content>
-					</v-expansion-panel>
-				</v-expansion-panels>
-			</v-container>
-		</v-row>
-		<v-row>
-			<v-sheet
-				class="mx-auto projects_container grey darken-2"
-				elevation="2"
-				max-width="75%"
-			>
-			</v-sheet>
-		</v-row>
+
+		<v-container>
+			<v-expansion-panels inset dark>
+				<v-expansion-panel>
+					<v-expansion-panel-header
+						>Fullstack Projects</v-expansion-panel-header
+					>
+					<v-expansion-panel-content>
+						<v-slide-group class="pa-4" active-class="success" show-arrows>
+							<v-slide-item>
+								<v-row justify="space-around">
+									<v-col
+										cols="4"
+										v-for="project in fullProjects"
+										:key="project.name"
+									>
+										<ProjectCard :item="project" />
+									</v-col>
+								</v-row>
+							</v-slide-item>
+						</v-slide-group>
+					</v-expansion-panel-content>
+				</v-expansion-panel>
+				<v-expansion-panel>
+					<v-expansion-panel-header
+						>Front End Projects</v-expansion-panel-header
+					>
+					<v-expansion-panel-content>
+						<v-slide-group class="pa-4" active-class="success" show-arrows>
+							<v-slide-item>
+								<v-row justify="space-around">
+									<v-col
+										cols="4"
+										v-for="project in frontProjects"
+										:key="project.name"
+									>
+										<ProjectCard :item="project" />
+									</v-col>
+								</v-row>
+							</v-slide-item>
+						</v-slide-group>
+					</v-expansion-panel-content>
+				</v-expansion-panel>
+			</v-expansion-panels>
+		</v-container>
 	</v-container>
 </template>
 
