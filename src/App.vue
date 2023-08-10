@@ -38,6 +38,7 @@
 			color: white;
 		}
 	}
+
 	.title-span {
 		animation: color-change 4s 6 ease-in-out;
 	}

@@ -5,13 +5,18 @@
 				<v-col cols="12">
 					<v-container>
 						<v-divider></v-divider>
-						<h2 class="text-h4 text-center pt-16 pb-4">
+						<h2 class="text-h4 text-center pt-16 pb-4 blockAnim">
 							Ab<span class="title-span">o</span>ut me
 						</h2>
 					</v-container>
 				</v-col>
 				<v-col cols="12" md="6">
-					<v-card class="mx-auto pa-5" elevation="5" outlined max-width="344">
+					<v-card
+						class="mx-auto pa-5 blockAnim"
+						elevation="5"
+						outlined
+						max-width="344"
+					>
 						<v-img src="@/assets/profile.jpg" height="350px"></v-img>
 					</v-card>
 				</v-col>
@@ -19,7 +24,7 @@
 				<v-col cols="12" md="6" align-self="center">
 					<v-card
 						max-width="700"
-						class="pa-5 mx-auto"
+						class="pa-5 mx-auto blockAnim"
 						elevation="10"
 						outlined
 						shaped

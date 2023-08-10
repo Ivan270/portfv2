@@ -34,3 +34,24 @@
 		padding: 0;
 	}
 </style>
+<style>
+	@keyframes show {
+		from {
+			opacity: 0;
+			scale: 25%;
+		}
+
+		to {
+			opacity: 1;
+			scale: 100%;
+		}
+	}
+	.blockAnim {
+		view-timeline-name: --block;
+		view-timeline-axis: block;
+		animation-timeline: --block;
+		animation-name: show;
+		animation-range: entry 25% cover 30%;
+		animation-fill-mode: both;
+	}
+</style>
