@@ -3,8 +3,8 @@
 		<v-container class="hidden">
 			<v-row align="center">
 				<v-col cols="12">
-					<h3 class="ps-1 pb-5 subtitle-1">Let's get in touch</h3>
-					<v-container class="">
+					<h3 class="ps-1 pb-5 subtitle-1 blockAnim">Let's get in touch</h3>
+					<v-container class="blockAnim">
 						<a
 							href="mailto:ivan270@gmail.com"
 							class="text-h5 text-md-h3 text-lg-h1 text-decoration-none grey--text text--darken-4 text-start font-weight-black text-lowercase breaker"
@@ -13,7 +13,7 @@
 						</a>
 					</v-container>
 				</v-col>
-				<v-col class="">
+				<v-col class="blockAnim">
 					<a
 						href="https://github.com/Ivan270"
 						target="_blank"

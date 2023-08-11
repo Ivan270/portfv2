@@ -15,18 +15,6 @@
 	import Skills from '@/components/Skills.vue';
 	import Contact from '@/components/Contact.vue';
 
-	// const hiddenElements = document.querySelectorAll('.noshow');
-	// const observer = new IntersectionObserver((entries) => {
-	// 	entries.forEach((entry) => {
-	// 		if (entry.isIntersecting) {
-	// 			entry.target.classList.add('show');
-	// 		} else {
-	// 			entry.target.classList.remove('show');
-	// 		}
-	// 	});
-	// });
-	// hiddenElements.forEach((element) => observer.observe(element));
-
 	export default {
 		name: 'Home-view',
 
@@ -47,29 +35,30 @@
 	}
 </style>
 <style>
-	/* @keyframes show {
+	@keyframes show {
 		from {
 			opacity: 0;
 			filter: blur(5px);
-			scale: 25%; 
-			transform: translateX(-100%);
-			transition: all 1s;
+			scale: 25%;
+			transform: translateY(100%);
+			transition: all 0.5s;
 		}
 
 		to {
 			opacity: 1;
 			filter: blur(0px);
-			transform: translateX(0);
+			scale: 100%;
+			transform: translateY(0);
 		}
-	} 
-	/* .blockAnim {
+	}
+	.blockAnim {
 		view-timeline-name: --block;
 		view-timeline-axis: block;
 		animation-timeline: --block;
 		animation-name: show;
 		animation-range: entry 25% cover 30%;
 		animation-fill-mode: both;
-	} */
+	}
 
 	.before-enter {
 		opacity: 0;
