@@ -4,8 +4,8 @@
 		fill-height
 		class="projects_container grey darken-3 white--text py-16"
 	>
-		<v-col cols="12">
-			<h2 class="text-h4 text-center pb-16 blockAnim">Projects</h2>
+		<v-col cols="12" v-scrollAnimation>
+			<h2 class="text-h4 text-center pb-16">Projects</h2>
 			<v-container>
 				<v-row>
 					<v-divider dark></v-divider>
@@ -14,7 +14,7 @@
 		</v-col>
 
 		<v-container>
-			<v-expansion-panels inset dark class="blockAnim">
+			<v-expansion-panels inset dark v-scrollAnimation>
 				<v-expansion-panel>
 					<v-expansion-panel-header
 						>Fullstack Projects</v-expansion-panel-header

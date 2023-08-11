@@ -11,7 +11,12 @@
 		<v-sheet class="mx-auto blockAnim" max-width="70%" dark rounded="xl">
 			<v-slide-group class="pa-4" show-arrows>
 				<v-slide-item v-for="skill in skills" :key="skill.title">
-					<v-card class="ma-4" width="100" elevation="0">
+					<v-card
+						class="ma-4 skill-icon"
+						width="100"
+						elevation="0"
+						v-scrollAnimation
+					>
 						<v-row align="center" justify="center">
 							<v-sheet
 								rounded="xl"
